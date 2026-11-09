@@ -190,6 +190,7 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .info div{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
 .info .ico{width:40px;height:40px;margin:0}
 .info .ico svg{width:20px;height:20px}
+.ico-li svg{fill:var(--blue);stroke:none}
 .info b{display:block;color:var(--navy)}
 .info a{text-decoration:none}
 .info a:hover{color:var(--blue)}
@@ -214,6 +215,7 @@ footer .fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
 footer b{color:#fff;display:block;margin-bottom:6px;font-family:Archivo}
 footer a{text-decoration:none}
 footer a:hover{color:#fff}
+footer .li{display:inline-flex;align-items:center;gap:6px;margin-top:8px}
 footer ul{list-style:none;display:grid;gap:4px}
 footer details{margin-top:28px;border-top:1px solid rgba(199,210,232,.15);padding-top:18px}
 footer summary{cursor:pointer;color:var(--sky)}
