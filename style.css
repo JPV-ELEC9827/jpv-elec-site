@@ -88,6 +88,7 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .cta-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
 .cta-band h2{color:#fff;margin:0 0 6px;font-size:clamp(1.4rem,2.6vw,1.9rem)}
 .cta-band p{color:var(--sky)}
+.cta-band p a{color:#fff}
 
 /* SAVOIR-FAIRE */
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
