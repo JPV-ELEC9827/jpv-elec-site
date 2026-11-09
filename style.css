@@ -143,6 +143,7 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .fab-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .fab-photos.three{grid-template-columns:repeat(3,1fr)}
 .fab-photos .shot:only-child{grid-column:1/-1;aspect-ratio:3/4;max-width:340px}
+.fab-photos.single .shot{aspect-ratio:4/3;max-width:none}
 .for{display:inline-block;font-size:.8rem;font-weight:600;color:var(--blue);background:#e6edf6;padding:4px 10px;border-radius:99px;margin-bottom:10px}
 .fab h3{font-size:1.4rem;margin-bottom:10px}
 .fab-txt>p{color:var(--muted)}
@@ -174,6 +175,7 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .about .photo{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:#d9dee3}
 .about .photo img{width:100%;height:100%;object-fit:cover}
+.about .photo.tall{aspect-ratio:4/5;width:100%;max-width:440px;justify-self:center}
 .timeline{list-style:none;margin-top:26px;border-left:2px solid var(--sky);padding-left:22px;display:grid;gap:16px}
 .timeline li{position:relative}
 .timeline li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:2px solid var(--bg)}
