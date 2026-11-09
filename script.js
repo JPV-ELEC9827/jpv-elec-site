@@ -36,18 +36,25 @@ if (g) {
     ['i2bd8a94980a3b8ce', 'Armoire automate'],
     ['i00cb1612d4e588b3', 'Série industrielle'],
   ];
-  photos.forEach(([id, t], i) => {
+  photos.forEach(([id, t]) => {
     const b = document.createElement('button');
+    b.dataset.lb = IMG(id, 1600); b.dataset.cap = t;
     b.innerHTML = `<img src="${IMG(id, 600)}" alt="${t} réalisée par JPV ELEC" loading="lazy"><span>${t}</span>`;
-    b.onclick = () => openLb(i);
     g.appendChild(b);
   });
-  const lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbTxt = lb.querySelector('p');
+}
+
+// Agrandissement des photos (page Réalisations) : tout bouton avec data-lb (photo 1600) et data-cap (légende)
+const lb = document.getElementById('lb');
+if (lb) {
+  const shots = [...document.querySelectorAll('[data-lb]')];
+  const lbImg = lb.querySelector('img'), lbTxt = lb.querySelector('p');
   let cur = 0;
+  shots.forEach((b, i) => b.onclick = () => openLb(i));
   function openLb(i) {
-    cur = (i + photos.length) % photos.length;
-    const [id, t] = photos[cur];
-    lbImg.src = IMG(id, 1600); lbImg.alt = t; lbTxt.textContent = t;
+    cur = (i + shots.length) % shots.length;
+    const s = shots[cur];
+    lbImg.src = s.dataset.lb; lbImg.alt = s.dataset.cap; lbTxt.textContent = s.dataset.cap;
     lb.classList.add('open');
   }
   const close = () => lb.classList.remove('open');
