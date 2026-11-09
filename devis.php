@@ -3,8 +3,8 @@
 // Fonctionne sur un hébergement OVH qui accepte le PHP.
 
 $destinataire = 'jn.hollard@jpv-elec.fr';
-// Adresse d'expédition : doit appartenir au domaine jpv-elec.fr, sinon OVH bloque l'envoi.
-$expediteur   = 'site@jpv-elec.fr';
+// Adresse d'expédition : doit appartenir au domaine relié à l'hébergement (jpv-elec.com), sinon OVH bloque l'envoi.
+$expediteur   = 'site@jpv-elec.com';
 
 function retour($etat) {
     header('Location: contact.html?envoi=' . $etat . '#devis', true, 303);
