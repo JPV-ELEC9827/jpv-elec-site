@@ -71,6 +71,8 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .preview{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .preview:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(6,48,90,.1)}
 .preview img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.preview img[src*="i850024b28430c142"]{object-position:center 44%}
+.preview img[src*="i2200077b1ac6ef0a"]{object-position:center 58%}
 .preview div{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
 .preview h3{font-size:1.15rem;margin-bottom:6px}
 .preview p{color:var(--muted);font-size:.93rem;flex:1}
@@ -125,6 +127,7 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 /* Nos fabrications */
 .shot{position:relative;display:block;width:100%;border:0;padding:0;cursor:zoom-in;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#d9dee3}
 .shot img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gallery img.photo-portrait,.shot img.photo-portrait{object-fit:contain}
 .shot:hover img{transform:scale(1.04)}
 .shot em{position:absolute;top:10px;left:10px;background:var(--navy);color:#fff;font-style:normal;font-weight:600;font-size:.8rem;padding:3px 10px;border-radius:99px}
 .fab{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;padding:44px 0;border-top:1px solid var(--line)}
