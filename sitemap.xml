@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Plan du site pour Google. Ajouter une ligne <url> si une nouvelle page est créée. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.jpv-elec.com/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.jpv-elec.com/savoir-faire.html</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.jpv-elec.com/realisations.html</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.jpv-elec.com/entreprise.html</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.jpv-elec.com/contact.html</loc><lastmod>2026-11-09</lastmod></url>
+</urlset>

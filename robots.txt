@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /devis.php
+
+Sitemap: https://www.jpv-elec.com/sitemap.xml
