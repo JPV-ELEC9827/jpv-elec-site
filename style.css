@@ -79,8 +79,6 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .preview{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .preview:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(6,48,90,.1)}
 .preview img{width:100%;aspect-ratio:16/10;object-fit:cover}
-.preview img[src*="i850024b28430c142"]{object-position:center 44%}
-.preview img[src*="i2200077b1ac6ef0a"]{object-position:center 58%}
 .preview div{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
 .preview h3{font-size:1.15rem;margin-bottom:6px}
 .preview p{color:var(--muted);font-size:.93rem;flex:1}
