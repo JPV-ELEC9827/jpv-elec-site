@@ -55,6 +55,14 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .hero{position:relative;color:#fff;padding:110px 0 120px;background:var(--navy) center/cover no-repeat;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,40,76,.94) 0%,rgba(4,40,76,.72) 55%,rgba(4,40,76,.3) 100%)}
 .hero .wrap{position:relative}
+.hero-grid{display:grid;grid-template-columns:320px 1fr;gap:48px;align-items:center}
+.hero-text{order:2;min-width:0}
+.hero-map{order:1;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.3)}
+.hero-map iframe{display:block;width:100%;height:240px;border:0}
+.hero-map-txt{padding:14px 16px;color:var(--navy);font-size:.88rem;line-height:1.45}
+.hero-map-txt b{display:block;font-family:Archivo,Inter,sans-serif;font-size:1rem}
+.hero-map-txt span{display:block;color:#4a5a6c}
+.hero-map-txt a{display:inline-block;margin-top:6px;font-weight:600;color:var(--navy)}
 .hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.5rem);max-width:760px;margin-bottom:20px}
 .hero p{color:#dbe4ef;max-width:600px;font-size:1.1rem;margin-bottom:32px}
 .ctas{display:flex;gap:14px;flex-wrap:wrap}
@@ -221,6 +229,8 @@ footer .copy{margin-top:16px}
   .qgrid,.projects,.previews{grid-template-columns:1fr 1fr}
   .gallery,.clients{grid-template-columns:repeat(3,1fr)}
   .fab{grid-template-columns:1fr;gap:24px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-map{order:3;max-width:480px}
   .lots{grid-template-columns:1fr 1fr}
   .stats .grid{grid-template-columns:repeat(2,1fr)}
   .stat:nth-child(3){border-left:0}
