@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réalisations – JPV ELEC, armoires et pupitres sortis de notre atelier</title>
+<meta name="description" content="Armoires d'automatisme, pupitres de commande, coffrets et séries industrielles réalisés par JPV ELEC dans son atelier de l'Eure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo-jpv-elec.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- EN-TÊTE (identique sur les 5 pages) -->
+<header>
+  <nav class="wrap nav" aria-label="Navigation principale">
+    <a class="brand" href="index.html" aria-label="JPV ELEC, accueil"><img src="img/logo-jpv-elec.jpg" alt="JPV ELEC" width="331" height="218"></a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <ul class="tabs" id="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="savoir-faire.html">Savoir-faire</a></li>
+      <li><a href="realisations.html" aria-current="page">Réalisations</a></li>
+      <li><a href="entreprise.html">L'entreprise</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="page-head" style="background-image:url('img/ie0422e1c7916a09d-1600.jpg')">
+  <div class="wrap">
+    <h1>Nos réalisations</h1>
+    <p>Armoires d'automatisme, pupitres, coffrets et séries industrielles sortis de notre atelier.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">En images</span>
+    <h2>Quelques équipements sortis de notre atelier</h2>
+    <p class="lead">Cliquez sur une photo pour l'agrandir.</p>
+    <!-- Les photos sont listées dans script.js -->
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Projets</span>
+    <h2>Quelques chantiers marquants</h2>
+    <div class="projects">
+      <div class="project"><b>Armoires inox 316L</b><span>Réalisation sur mesure en acier inoxydable</span></div>
+      <div class="project"><b>Pont roulant 450 kN</b><span>Équipement électrique de levage</span></div>
+      <div class="project"><b>8 armoires + 4 coffrets</b><span>Fils DNV (marine) et dossier électrique complet</span></div>
+      <div class="project"><b>Coffret démarreur de pompe</b><span>Commande et protection</span></div>
+      <div class="project"><b>Pupitre automate</b><span>Commande et supervision</span></div>
+      <div class="project"><b>Coffret électrique pour Veolia</b><span>Étude et réalisation</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+  <button class="x" aria-label="Fermer">×</button>
+  <button class="nv prev" aria-label="Photo précédente">‹</button>
+  <img alt="">
+  <button class="nv next" aria-label="Photo suivante">›</button>
+  <p></p>
+</div>
+</main>
+
+<!-- PIED DE PAGE (identique sur les 5 pages) -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div><b>JPV ELEC</b>Étude et réalisation d'équipements électriques et d'automatisme<br>ZI de Vieville, 22 rue du Parc<br>27750 La Couture-Boussey</div>
+      <div><b>Nous joindre</b><a href="tel:+33232269578">02 32 26 95 78</a><br><a href="mailto:contact@jpv-elec.fr">contact@jpv-elec.fr</a><br>Lundi au jeudi 8 h – 17 h<br>Vendredi 8 h – 12 h</div>
+      <div><b>Le site</b>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="savoir-faire.html">Savoir-faire</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="entreprise.html">L'entreprise</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <details>
+      <summary>Mentions légales</summary>
+      <p>JPV ELEC, EURL au capital de 5 000 €, immatriculée au RCS d'Évreux sous le n° 400 261 178. SIRET : 400 261 178 00034. TVA intracommunautaire : FR79400261178. Code NAF : 33.20C. Siège : 22 rue du Parc, ZI de Vieville, 27750 La Couture-Boussey. Directeur de la publication : Jean-Noël Hollard, gérant. Hébergeur : OVH SAS, 2 rue Kellermann, 59100 Roubaix, France. Les données envoyées via le formulaire servent uniquement à répondre à votre demande et ne sont pas transmises à des tiers.</p>
+    </details>
+    <p class="copy">© <span id="y"></span> JPV ELEC</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

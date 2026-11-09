@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact et devis – JPV ELEC, La Couture-Boussey (27)</title>
+<meta name="description" content="Adresse, téléphone, horaires et plan d'accès de JPV ELEC. Demandez votre devis gratuit en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo-jpv-elec.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- EN-TÊTE (identique sur les 5 pages) -->
+<header>
+  <nav class="wrap nav" aria-label="Navigation principale">
+    <a class="brand" href="index.html" aria-label="JPV ELEC, accueil"><img src="img/logo-jpv-elec.jpg" alt="JPV ELEC" width="331" height="218"></a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <ul class="tabs" id="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="savoir-faire.html">Savoir-faire</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="entreprise.html">L'entreprise</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="page-head" style="background-image:url('img/i20ad3a57366db96e-1600.jpg')">
+  <div class="wrap">
+    <h1>Contact et devis</h1>
+    <p>Atelier et bureaux à La Couture-Boussey, facilement accessibles depuis Évreux, direction Saint-André-de-l'Eure puis Ézy-sur-Eure.</p>
+  </div>
+</section>
+
+<section class="white">
+  <div class="wrap cgrid">
+    <div>
+      <span class="kicker">Nous trouver</span>
+      <h2>Venez nous voir ou appelez-nous</h2>
+      <div class="info">
+        <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <p><b>Adresse</b>ZI de Vieville – 22 rue du Parc<br>27750 La Couture-Boussey</p></div>
+        <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <p><b>Téléphone</b><a href="tel:+33232269578">02 32 26 95 78</a><br>Fax : 02 32 26 95 79</p></div>
+        <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <p><b>E-mail</b><a href="mailto:contact@jpv-elec.fr">contact@jpv-elec.fr</a></p></div>
+        <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <p><b>Horaires d'enlèvement</b>Lundi au jeudi : 8 h – 17 h<br>Vendredi : 8 h – 12 h, sur rendez-vous</p></div>
+      </div>
+      <div class="map">
+        <iframe title="Plan d'accès JPV ELEC" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=22%20rue%20du%20Parc%2C%2027750%20La%20Couture-Boussey&z=14&output=embed"></iframe>
+      </div>
+    </div>
+
+    <form id="devis" name="devis" method="POST" action="devis.php">
+      <p hidden><label>Ne pas remplir <input name="site-web"></label></p>
+      <h2>Demande de devis</h2>
+      <p class="form-msg ok" id="msg-ok" hidden>Merci, votre demande a bien été envoyée. Nous vous répondons rapidement.</p>
+      <p class="form-msg err" id="msg-err" hidden>L'envoi n'a pas fonctionné. Vérifiez les champs ou appelez-nous au 02 32 26 95 78.</p>
+      <p class="note">Nos devis sont gratuits et valables 3 mois. Joignez vos schémas ou décrivez simplement votre besoin.</p>
+      <label>Nom et prénom *<input name="nom" required autocomplete="name"></label>
+      <label>Société *<input name="societe" required autocomplete="organization"></label>
+      <label>Téléphone *<input name="telephone" type="tel" required autocomplete="tel"></label>
+      <label>E-mail *<input name="email" type="email" required autocomplete="email"></label>
+      <label class="full">Votre projet *<textarea name="message" required placeholder="Type d'équipement, quantité, délai souhaité..."></textarea></label>
+      <button class="btn" type="submit">Envoyer ma demande</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- PIED DE PAGE (identique sur les 5 pages) -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div><b>JPV ELEC</b>Étude et réalisation d'équipements électriques et d'automatisme<br>ZI de Vieville, 22 rue du Parc<br>27750 La Couture-Boussey</div>
+      <div><b>Nous joindre</b><a href="tel:+33232269578">02 32 26 95 78</a><br><a href="mailto:contact@jpv-elec.fr">contact@jpv-elec.fr</a><br>Lundi au jeudi 8 h – 17 h<br>Vendredi 8 h – 12 h</div>
+      <div><b>Le site</b>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="savoir-faire.html">Savoir-faire</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="entreprise.html">L'entreprise</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <details>
+      <summary>Mentions légales</summary>
+      <p>JPV ELEC, EURL au capital de 5 000 €, immatriculée au RCS d'Évreux sous le n° 400 261 178. SIRET : 400 261 178 00034. TVA intracommunautaire : FR79400261178. Code NAF : 33.20C. Siège : 22 rue du Parc, ZI de Vieville, 27750 La Couture-Boussey. Directeur de la publication : Jean-Noël Hollard, gérant. Hébergeur : OVH SAS, 2 rue Kellermann, 59100 Roubaix, France. Les données envoyées via le formulaire servent uniquement à répondre à votre demande et ne sont pas transmises à des tiers.</p>
+    </details>
+    <p class="copy">© <span id="y"></span> JPV ELEC</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
