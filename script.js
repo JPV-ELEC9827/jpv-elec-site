@@ -17,6 +17,17 @@ if (envoi) {
   if (m) m.hidden = false;
 }
 
+// Anti-robots du formulaire de devis : envoie le temps passé sur la page (devis.php refuse en dessous de 4 s)
+const devis = document.getElementById('devis');
+if (devis) {
+  const debut = Date.now();
+  devis.addEventListener('submit', () => {
+    let d = devis.querySelector('input[name="d"]');
+    if (!d) { d = document.createElement('input'); d.type = 'hidden'; d.name = 'd'; devis.appendChild(d); }
+    d.value = Math.round((Date.now() - debut) / 1000);
+  });
+}
+
 // Agrandissement des photos (page Réalisations) : tout bouton avec data-lb (photo 1600) et data-cap (légende)
 const lb = document.getElementById('lb');
 if (lb) {

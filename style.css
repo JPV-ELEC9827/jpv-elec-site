@@ -192,6 +192,7 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);box-shadow:0 2px 
 .info .ico{width:40px;height:40px;margin:0}
 .info .ico svg{width:20px;height:20px}
 .ico-li svg{fill:var(--blue);stroke:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .sectors{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:32px}
 .sector{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:8px;padding:16px 18px}
 .sector b{display:block;color:var(--navy);font-family:Archivo,Inter,sans-serif;margin-bottom:4px}
