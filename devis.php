@@ -88,6 +88,10 @@ if (preg_match_all('~https?://|www\.~i', $message) > 1) {
 if (preg_match('/[\p{Cyrillic}\p{Han}\p{Hangul}\p{Arabic}\p{Thai}]/u', $tout)) {
     spam('alphabet étranger');
 }
+// Texte illisible (souvent un message étranger dont les lettres sont devenues des « ? »).
+if (preg_match('/\?{5,}/', $tout)) {
+    spam('texte illisible');
+}
 $mots_spam = [
     'seo', 'backlink', 'référencement', 'referencement', 'première page de google', 'premiere page de google',
     'first page of google', 'google ads', 'marketing digital', 'digital marketing', 'growth hacking',
